@@ -1,3 +1,2 @@
 #!/bin/bash
-sub=$(find . -type d)
-chmod -R ugo+x $(sub)
+chmod -R ugo+x $(find . -type d)
