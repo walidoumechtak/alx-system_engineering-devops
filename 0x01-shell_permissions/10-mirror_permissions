@@ -1,0 +1,2 @@
+#!/bin/bash
+chomd --reference=hello olleh
