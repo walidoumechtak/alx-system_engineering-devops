@@ -1,0 +1,2 @@
+#!/bin/bash
+awk 'AWK == 3' iacta
