@@ -1,0 +1,3 @@
+#!/usr/local/bin bash
+#print list of currnet running proccess
+ps aux --forest
