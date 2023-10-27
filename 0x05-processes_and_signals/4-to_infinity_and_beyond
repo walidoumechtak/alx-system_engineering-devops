@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# bash scritp that display a message infinity wiht 
+# a sleep of 2 (sleep 2)
+i=0
+while [ $i -le 10 ]
+do
+	echo "To infinity and beyond"
+	sleep 2
+done
