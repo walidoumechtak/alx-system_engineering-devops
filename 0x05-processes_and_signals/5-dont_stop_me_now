@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
 #stop the proccess called to_infinity_and_beyond
-kill 4-to_infinity_and_beyond
+name="4-to_infinity_and_beyond"
+pids=$(pgrep "$name")
+kill "$pids"
