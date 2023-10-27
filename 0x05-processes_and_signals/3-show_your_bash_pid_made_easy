@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 #print the pid that containe the name bash
-top -n 1 -b | grep bash
+top -n 1 -b | grep bash | awk '$12 == "bash" {print $1 " " $12}'
