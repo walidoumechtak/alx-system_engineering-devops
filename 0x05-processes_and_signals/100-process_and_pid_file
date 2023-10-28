@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 # bash scritp that do alotof...
+# create file
+# echo something when reciving  SIGNAL
+# kill alos the process when reciving a SIGNAL
 
 ahshit() {
 	rm /var/run/myscript.pid
@@ -8,7 +11,7 @@ ahshit() {
 
 echo "$$" > /var/run/myscript.pid
 
-whie true
+while true
 do
 	echo "To infinity and beyond"
 	sleep 2
