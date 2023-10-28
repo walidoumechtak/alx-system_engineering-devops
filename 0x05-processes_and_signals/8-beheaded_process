@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#kill a proccess that using trap cmd with SIGTERM signal
+echo "I am invincible!!!"
