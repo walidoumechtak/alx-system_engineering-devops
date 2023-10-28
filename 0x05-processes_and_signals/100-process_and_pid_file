@@ -13,5 +13,5 @@ do
 	sleep 2
 	trap 'echo "I hate the kill command" && ahshit' SIGTERM
 	trap 'echo "Y U no love me?!"' SIGINT
-	trap 'ahshit' SIGQUIT
+	trap 'ahshit' SIGQUITgit
 done
