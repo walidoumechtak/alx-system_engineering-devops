@@ -1,13 +1,17 @@
 #!/usr/bin/env bash
 #bash scritp that do alotof...
 
+ahshit() {
+	rm /var/run/myscript.pid
+	exit
+}
+
 echo "$$" > /var/run/myscript.pid
 whie true
 do
 	echo "To infinity and beyond"
 	sleep 2
-	trap 'echo "I hate the kill command"' SIGTERM
+	trap 'echo "I hate the kill command" && ahshit' SIGTERM
 	trap 'echo "Y U no love me?!"' SIGINT
-	trap 'rm /var/run/myscript.pid' SIGQUIT
-	trap 'rm /var/run/myscript.pid' SIGTERM
+	trap 'ahshit' SIGQUIT
 done
