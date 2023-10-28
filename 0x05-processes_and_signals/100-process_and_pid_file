@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#bash scritp that do alotof...
+# bash scritp that do alotof...
 
 ahshit() {
 	rm /var/run/myscript.pid
