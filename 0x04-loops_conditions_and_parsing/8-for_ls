@@ -1,11 +1,7 @@
 #!/usr/bin/env bash
 # list all files in current directory ignoring hidden files
 
-for file in ./*
-do
-	if [ -f "$file" ] && [ ! -h "$file" ] && [[ "$file" != */.* ]]
-	then
-		res="${file#*-}"
-		echo "$res"
-	fi
+list=$(ls)
+for i in $list; do
+	echo "$i" | cut -d '-' -f2
 done
