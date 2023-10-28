@@ -7,11 +7,12 @@ ahshit() {
 }
 
 echo "$$" > /var/run/myscript.pid
+
 whie true
 do
 	echo "To infinity and beyond"
 	sleep 2
-	trap 'echo "I hate the kill command" && ahshit' SIGTERM
 	trap 'echo "Y U no love me?!"' SIGINT
+	trap 'echo "I hate the kill command" && ahshit' SIGTERM
 	trap 'ahshit' SIGQUITgit
 done
