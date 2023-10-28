@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+#infinit loop with catch a signal
+
+while true
+do
+	sleep 2
+	trap 'echo "I am invincible!!!"' SIGTERM
+done
